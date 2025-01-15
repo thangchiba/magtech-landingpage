@@ -5,7 +5,6 @@ import Image from 'next/image'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { submitContact } from './actions/contact'
 import { useFormState } from 'react-dom'
 
 export default function LandingPage() {
@@ -16,6 +15,9 @@ export default function LandingPage() {
   const contactRef = useRef<HTMLElement>(null)
   const clientsContainerRef = useRef<HTMLDivElement>(null)
 
+  const submitContact = ()=>{
+    console.log("Do nothing");
+  }
   const [state, formAction] = useFormState(submitContact, null)
 
   const scrollToSection = (ref: React.RefObject<HTMLElement>) => {
@@ -289,11 +291,6 @@ export default function LandingPage() {
                     </Button>
                   </div>
                 </form>
-                {state?.success && (
-                    <div className="mt-4 text-left text-green-600">
-                      {state.message}
-                    </div>
-                )}
               </div>
             </div>
           </div>
