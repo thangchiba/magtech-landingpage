@@ -72,7 +72,7 @@ export default function LandingPage() {
                   技術とデザインを<br/>融合し、新価値を
                 </h1>
                 <p className="text-4xl mt-5">
-                  Magtechが関わることで、世界の可能性を<br/>どこまでも伸ばしていきたい
+                  Magtechが関わることで、世界の可能性を<br/>どこまでも伸ばしていきたい。
                 </p>
               </div>
             </div>
@@ -257,10 +257,6 @@ export default function LandingPage() {
                 <p className="mb-4 text-lg">
                   <strong>電話番号:</strong><br />
                   (+84)35-956-8799
-                </p>
-                <p className="text-lg">
-                  <strong>メール:</strong><br />
-                  contact@magtech.com
                 </p>
               </div>
 
